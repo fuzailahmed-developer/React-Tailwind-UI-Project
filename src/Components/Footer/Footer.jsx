@@ -53,8 +53,8 @@ const Footer = () => {
 
 
     return (
-            <div className='px-5 xxs:px-10 md:px-20 pb-10 flex justify-between lg:flex-row flex-col gap-y-8'>
-                <div className='flex flex-col xxs:flex-row lg:flex-col justify-between lg:items-start items-center gap-y-6'>
+            <div className='footerContainer'>
+                <div className='footerChild1'>
                     <div>
                         <img src={logo} alt="logo" />
                     </div>
