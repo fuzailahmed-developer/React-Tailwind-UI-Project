@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+/* tailwind css */
+
+@theme {
+    --color-nav-li: rgba(255, 255, 255, 0.6);
+    --color-border-light: rgba(255, 255, 255, 0.15);
+    --color-new-purple: #9855FF;
+    --color-heading-purple: #B372CF;
+    --color-pricing-btn-bg:rgba(61,61,61,0.4);
+    --color-pricing-btn2-bg: rgba(140,69,255,0.4);
+    --color-glow: #6C32B6;
+    --font-pop: "Poppins", sans-serif;
+    --breakpoint-xxs: 420px;
+    --breakpoint-hundredPx: 100px;
+    --breakpoint-footer-po: 650px;
+}
+
+
+/*? nav class */
+
+.nav-ul {
+    @apply py-2 px-10 rounded-4xl;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.nav-btn {
+    @apply py-2 px-5 rounded-xl text-sm;
+    background-color: rgba(140, 69, 255, 0.6);
+    box-shadow: inset 0 0 6px 3px rgba(255, 255, 255, 0.5);
+}
+
+.nav-li {
+    @apply flex items-center gap-1 text-nav-li text-sm hover:text-purple-600 transition duration-300 cursor-pointer;
+}
+
+.menu {
+    @apply py-8 w-72 items-center gap-y-5 rounded-2xl backdrop-blur-xl bg-zinc-950;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*? hero section start*/
+.glow {
+    @apply left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10;
+    background-image: radial-gradient(circle, #8C45FF90 30%, transparent 100%);
+    filter: blur(100px);
+}
+
+.heroContentContainer {
+    @apply flex flex-col items-center gap-2 pb-3;
+}
+
+.heroLatestUpdate {
+    @apply flex items-center w-fit gap-3 rounded-3xl py-2 px-4 bg-zinc-900 border-nav-li mb-4;
+}
+
+.heroLatestUpdateSpan {
+    @apply py-1.5 px-3 bg-new-purple rounded-3xl text-black font-bold sm:text-base text-sm;
+}
+
+.heroContentBtn {
+    @apply bg-white hover:bg-heading-purple hover:text-white text-black py-1.5 px-3 rounded font-medium sm:mt-3 transition duration-300;
+}
+
+/*? hero section end */
+
+
+/*? our clients start */
+
+.gridControl {
+  display: grid;
+  grid-template-columns: 25% 190px auto;
+  grid-template-rows: 100px 200px 100px;
+  position: relative;
+}
+
+.gridControl::after{
+    content : '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(transparent 85%,black 30%);
+    box-shadow: inset 0px 0px 50px 50px black;
+}
+
+.gridControl::before{
+    content : '';
+    position: absolute;
+    top: 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    width:100%;
+    height:100%;
+    background: radial-gradient(circle at center, #8C45FF40 0%, transparent 70%);
+    
+}
+
+.gridControl > * {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width:768px) {
+    .gridControl div:nth-child(6){
+        border:none;
+    }
+    .gridControl{
+        grid-template-columns: auto 190px auto;
+    }
+}
+
+@media screen and (max-width:420px){
+    .gridControl{
+        grid-template-columns: auto 130px auto;
+        grid-template-rows: 100px auto 100px;
+    }
+}
+
+/*? our clients end */
+
+/*? pricing section start */
+.pricingContainer{
+    @apply sm:px-10 lg:px-14 xl:px-20 px-5 min-h-[95vh] relative;
+}
+
+.pricingCardShadow{
+    box-shadow: 0px 0px 150px 50px rgba(140,69,255,0.3);
+}
+
+
+/*? pricing section end */
+
+/*! custom css */
+
+body {
+    background-color: black;
+    color: white;
+}
