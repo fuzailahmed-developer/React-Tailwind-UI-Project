@@ -2,7 +2,7 @@ import React from 'react'
 import ctaImg from "../../assets/CTA.svg"
 const JoinWaitList = () => {
     return (
-        <div className='sm:px-10 lg:px-14 xl:px-20 py-10'>
+        <div className='sm:px-10 lg:px-14 xl:px-20 py-10' data-aos='zoom-in'>
             <div className={`h-[50vh] sm:h-[70vh] bg-cover border border-border-light rounded flex flex-col items-center justify-center`} style={{ backgroundImage: `url(${ctaImg})` }}>
                 <div className='p-6'>
                     <h2 className='text-4xl xxs:text-5xl md:text-6xl text-center font-medium'>AI-driven SEO <br className='xxs:block hidden'/>for everyone.</h2>

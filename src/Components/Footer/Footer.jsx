@@ -54,7 +54,7 @@ const Footer = () => {
 
     return (
             <div className='footerContainer'>
-                <div className='footerChild1'>
+                <div className='footerChild1' data-aos='fade-left'>
                     <div>
                         <img src={logo} alt="logo" />
                     </div>
@@ -66,7 +66,7 @@ const Footer = () => {
                         }
                     </div>
                 </div>
-                <div className='flex gap-x-20 gap-y-8 pb-4 footer-po:flex-nowrap flex-wrap *:basis-[30%] *:footer-po:basis-auto'>
+                <div className='flex gap-x-20 gap-y-8 pb-4 footer-po:flex-nowrap flex-wrap *:basis-[30%] *:footer-po:basis-auto' data-aos='fade-right'>
                     {
                         footerLinks.map((links,idx) => (
                             <FooterLinks links={links} key={idx}/>

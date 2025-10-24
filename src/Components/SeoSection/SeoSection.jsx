@@ -64,7 +64,7 @@ const SeoSection = () => {
 
     return (
         <div className='min-h-screen sm:px-10 lg:px-14 xl:px-20 px-5 pt-20 pb-10 bg-linear-to-tl from-[#020103] to-[#190D2E] mt-10'>
-            <h1 className='text-4xl sm:text-5xl md:text-6xl font-medium mb-14'>
+            <h1 className='text-4xl sm:text-5xl md:text-6xl font-medium mb-14' data-aos='fade-up'>
                 Elevate your  <br className='sm:block hidden'/> SEO efforts.
             </h1>
             <div className='grid sm:grid-cols-2 lg:grid-cols-3 grid-rows-auto min-h-[calc(100vh-350px)] gap-5 sm:gap-10'>

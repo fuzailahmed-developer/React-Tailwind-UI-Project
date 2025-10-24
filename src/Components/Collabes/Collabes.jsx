@@ -23,11 +23,11 @@ const Collabes = () => {
 
 
   return (
-    <div className='px-5 sm:px-10 pt-16 pb-24'>
+    <div className='px-5 sm:px-10 pt-16 pb-24' data-aos="fade-up">
 
       <div className='flex flex-wrap xxs:justify-between justify-center gap-y-4'>
         {
-          logosUrls.map((url,idx) => (
+          logosUrls.map((url, idx) => (
             <img src={url} alt="" className='w-[175px] h-[98px]' key={idx} />
           ))
         }

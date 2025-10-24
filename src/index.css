@@ -51,7 +51,7 @@
 }
 
 .heroLatestUpdate {
-    @apply flex items-center w-fit gap-3 rounded-3xl py-2 px-4 bg-zinc-900 border-nav-li mb-4;
+    @apply flex items-center w-fit gap-3 rounded-3xl py-2 px-4 bg-zinc-900 border-nav-li mb-4 xxs:flex-row flex-col-reverse flex-r;
 }
 
 .heroLatestUpdateSpan {
@@ -142,4 +142,5 @@
 body {
     background-color: black;
     color: white;
+    overflow-x: hidden;
 }

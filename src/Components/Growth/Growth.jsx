@@ -11,10 +11,10 @@ const Growth = () => {
 
   return (
     <div className='sm:px-10 px-5'>
-      <h1 className='text-center md:text-4xl sm:text-3xl text-2xl font-medium mb-20'>
+      <h1 className='text-center md:text-4xl sm:text-3xl text-2xl font-medium mb-20' data-aos='fade-up'>
         Harness the power of AI, making <br className='md:block hidden'/> search engine optimization intuitive <br className='md:block hidden'/> and effective for all skill levels.
       </h1>
-      <div className='flex flex-col gap-y-10'>
+      <div className='flex flex-col gap-y-10' >
         <GrowthContent
           leftImg={ringImg}
           rightImg={growth}
@@ -26,7 +26,6 @@ const Growth = () => {
           rightHeading={'User-friendly dashboard'}
           rightPara1={'Perform complex SEO audits '}
           rightPara2={'and optimizations with a single click.'}
-
         />
         <GrowthContent
           leftImg={ringImg2}

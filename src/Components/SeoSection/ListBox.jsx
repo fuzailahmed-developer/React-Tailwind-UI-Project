@@ -2,7 +2,7 @@ import React from 'react'
 
 const ListBox = ({list,idx}) => {
     return (
-        <div className='flex flex-col sm:gap-y-3 lg:gap-y-5'>
+        <div className='flex flex-col sm:gap-y-3 lg:gap-y-5' data-aos='fade-up'>
             <div className='flex gap-x-3 items-center'>
                 <img src={list.img} alt="icon" />
                 <h3 className='text-lg font-medium'>{list.title}</h3>

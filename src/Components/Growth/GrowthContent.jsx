@@ -4,7 +4,7 @@ const GrowthContent = ({ leftImg, rightImg, direction, leftHeading, leftPara1, l
 
     return (
         <>
-            <div className='flex md:flex-row flex-col gap-4'>
+            <div className='flex md:flex-row flex-col gap-4' data-aos='fade-up'>
                 <div className={`md:basis-[35%] lg:basis-[30%] border border-border-light p-10 rounded-xl ${direction ? "md:order-1" : "md:order-2"}`}>
                     <div className='flex justify-center mb-10'>
                         <img src={leftImg} alt="ring" />

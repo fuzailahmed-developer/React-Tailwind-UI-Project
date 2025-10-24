@@ -4,7 +4,7 @@ import HeroContentPartTwo from './HeroContentPartTwo'
 
 const HeroContent = () => {
     return (
-        <div className='pt-[50px] sm:pt-[70px] md:pt-[90px] heroContentContainer'>
+        <div className='pt-[50px] sm:pt-[70px] md:pt-[90px] heroContentContainer' data-aos="fade-up">
             <HeroContentPartOne />
             <HeroContentPartTwo />
         </div>

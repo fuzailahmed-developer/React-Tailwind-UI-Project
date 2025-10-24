@@ -6,13 +6,13 @@ const OurClients = () => {
         <div className=' relative sm:px-10 lg:px-14 xl:px-20 px-5 overflow-hidden h-screen max-w-[1200px] mx-auto pt-10'>
             
             <div>
-                <div className='text-center md:mb-10'>
+                <div className='text-center md:mb-10' data-aos='fade-up'>
                     <h1 className='text-4xl sm:text-5xl lg:text-6xl font-medium mb-7'>Our Clients</h1>
                     <p className='text-[#ffffff] text-lg sm:text-xl'>
                         Hear firsthand how our solutions have <br className='xxs:block hidden'/> boosted online success for users like you.
                     </p>
                 </div>
-                <div className='gridControl relative'>
+                <div className='gridControl relative' data-aos='zoom-in'>
                     <div></div>
                     <div></div>
                     <div></div>
