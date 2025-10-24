@@ -131,7 +131,7 @@
 
 /*? footer start */
 .footerContainer{
-    @apply px-5 xxs:px-10 md:px-20 pb-10 flex justify-between lg:flex-row flex-col gap-y-8;
+    @apply px-5 xxs:px-10 md:px-20 pb-10 flex justify-between lg:flex-row flex-col gap-y-8 overflow-x-hidden;
 }
 .footerChild1{
     @apply flex flex-col xxs:flex-row lg:flex-col justify-between lg:items-start items-center gap-y-6;
