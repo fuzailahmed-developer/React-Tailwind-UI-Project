@@ -3,8 +3,8 @@ import logo from "../../assets/Logo.svg"
 
 import Menu from './Menu';
 import NavLinks from './NavLinks';
-import NavBtn from './Navbtn';
 import MenuToggleBtn from './MenuToggleBtn';
+import NavBtn from './NavBtn';
 
 
 const Navbar = () => {
